@@ -6,6 +6,7 @@ import java.util.Set;
 
 @Entity
 public class Book {
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
@@ -19,8 +20,7 @@ public class Book {
     private Set<Author> authors = new HashSet<>();
 
 
-    public Book() {
-    }
+    public Book() {}
 
     public Book(String title, String isbn) {
         this.title = title;
